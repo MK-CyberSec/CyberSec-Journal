@@ -1,0 +1,72 @@
+# Lab 002 — Nmap Service Scan
+**Date:** June 17, 2026  
+**Status:** Complete
+
+---
+
+## Objective
+Perform a service version scan against the Ubuntu Server VM using 
+Nmap to identify open ports and the services running on them.
+
+---
+
+## Tools Used
+- Kali Linux 2026.1
+- Nmap
+- Ubuntu Server 26.04 LTS (target machine)
+
+---
+
+## What I Did
+Ran a service detection scan from Kali against the Ubuntu Server VM 
+to enumerate open ports and identify the specific service and version 
+running on each. This is a fundamental reconnaissance technique used 
+to understand what is exposed on a target system before any further 
+testing or hardening can take place.
+
+---
+
+## Steps Taken
+1. Confirmed Ubuntu VM was powered on and noted its IP address using `ip a`
+2. Opened a terminal on the Kali VM
+3. Ran the command: `nmap -sV [Ubuntu IP]`
+4. Reviewed the output, identifying each open port and its associated service
+5. Cross-referenced unfamiliar services against notes from Professor Messer and TryHackMe
+
+---
+
+## Output
+[paste your actual nmap -sV output here]
+---
+
+## Issues Encountered
+[Note anything that came up — e.g. scan took longer than expected, 
+had to confirm IP address again, any ports that surprised you, etc. 
+If nothing went wrong, say so directly: "No issues encountered during 
+this scan."]
+
+---
+
+## What This Means
+The `-sV` flag instructs Nmap to attempt service version detection 
+on every open port it finds, rather than just reporting that a port 
+is open. This is more useful than a basic scan because knowing the 
+exact service and version running allows a security professional to 
+identify outdated software, known vulnerabilities tied to specific 
+versions, and unnecessary services that should be closed or restricted.
+
+[Add 2–3 sentences in your own words about what your specific results showed]
+
+---
+
+## What I Learned
+- How to perform a service version scan using Nmap
+- The difference between a basic port scan and a service detection scan
+- How to interpret Nmap output — port number, state, service name, version
+- Why identifying running services is a foundational step in vulnerability assessment
+
+---
+
+## Next Steps
+- Test how firewall configuration changes affect scan results (Lab 003)
+- Begin researching any vulnerabilities tied to identified service versions
