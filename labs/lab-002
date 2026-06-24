@@ -36,15 +36,19 @@ testing or hardening can take place.
 ---
 
 ## Output
-nmap -sV 127.0.0.1
-Starting Nmap 7.98 ( https://nmap.org ) at 2026-06-24 17:50 -0400
-Nmap scan report for localhost (127.0.0.1)
-Host is up (0.0000020s latency).
-All 1000 scanned ports on localhost (127.0.0.1) are in ignored states.
-Not shown: 1000 closed tcp ports (reset)
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-06-24 18:16 -0400
+Stats: 0:00:03 elapsed; 0 hosts completed (0 up), 1 undergoing ARP Ping Scan
+ARP Ping Scan Timing: About 100.00% done; ETC: 18:16 (0:00:00 remaining)
+Nmap scan report for 192.168.56.106
+Host is up (0.00058s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 10.2p1 Ubuntu 2ubuntu3.2 (Ubuntu Linux; protocol 2.0)
+MAC Address: 08:00:27:AD:07:D7 (Oracle VirtualBox virtual NIC)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 0.22 seconds
+Nmap done: 1 IP address (1 host up) scanned in 4.96 seconds
 
 ---
 
